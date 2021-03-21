@@ -19,7 +19,7 @@ Independent research projects:
 
 You can find more about the publications on [Scholar](https://scholar.google.com/citations?user=lNn2qGoAAAAJ&hl=en).
 
-I have previously worked as a ML project intern at Tata Consultancy Services where I got the opportunity to work on understanding customer behavior using NLP. I have also collaborated with Prof. Pratik Kanani on a industry project focusing on anamoly detection in heart rate (pulse) using IoT and ML. I also led a team that developed a platform for conducting C programming examination in the college for over 500 students.
+I have previously worked as a ML project intern at Tata Consultancy Services where I got the opportunity to work on understanding customer behavior using NLP. I have also collaborated with Prof. Pratik Kanani on a industry project focusing on anamoly detection in heart rate (pulse) using IoT and ML. I also led a team that developed a platform for conducting C programming examination in the college for over 500 students [demo](https://www.youtube.com/watch?v=kn7lwJoYfuU).
 
 I'm also working as a mentor at [DJ Unicode](https://github.com/djunicode) an open source organization by our college department where I help juniors on software development projects and as well as learn new stuffs too 😀.
 
