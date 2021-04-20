@@ -779,11 +779,11 @@ F((w_i - w_j)^T \tilde{w_k}) = \frac{P_{ik}}{P_{jk}}
 $$<p>We also need to preserve symmetry for the distinction between a word and a context word which means that if $ice$ can be used as a context word for $water$, then $water$ can also be used as a context word for $ice$. In a simple, it can be expressed as $w \leftrightarrow \tilde{w}$. This is also evident from our co-occurrence matrix since $X \leftrightarrow X^T$. In order to restore the symmetry, we require that function $F$ is a homomorphism between groups $(\mathrm{R, +})$ and $(\mathrm{R, \times})$.</p>
 <blockquote>
 <p>Given two groups, $\small (G, ∗)$ and $\small (H, \cdot)$, a group homomorphism from $\small (G, ∗)$ to $\small (H, \cdot)$ is a function $\small h :G \rightarrow H$ such that for all $u$ and $v$ in $\small G$ it holds that $\small h(u * v) = h(u) \cdot h(v)$
-$$
-F((w_i - w_j)^T \tilde{w_k}) = F(w_i^T \tilde{w_k} + (-w_j^T \tilde{w_k}))  = F(w_i^T \tilde{w_k}) \times F(-w_j^T \tilde{w_k}) = F(w_i^T \tilde{w_k}) \times F(w_j^T \tilde{w_k})^{-1}
-$$</p>
+<br></p>
 </blockquote>
 $$
+F((w_i - w_j)^T \tilde{w_k}) = F(w_i^T \tilde{w_k} + (-w_j^T \tilde{w_k}))  = F(w_i^T \tilde{w_k}) \times F(-w_j^T \tilde{w_k}) = F(w_i^T \tilde{w_k}) \times F(w_j^T \tilde{w_k})^{-1}
+$$$$
 F((w_i - w_j)^T \tilde{w_k}) = \frac{F(w_i^T \tilde{w_k})}{F(w_j^T \tilde{w_k})}
 $$<p>So if we recall the $F$ in terms of co-occurrence probabilities, we get the following:</p>
 $$
