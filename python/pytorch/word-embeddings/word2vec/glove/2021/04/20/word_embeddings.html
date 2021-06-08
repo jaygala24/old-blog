@@ -178,7 +178,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Humans use language as a way of communication for exchanging ideas and knowledge with others. Words are an integral part of the language that represents the <a href="https://en.wikipedia.org/wiki/Denotational_semantics">denotational semnatics</a>, i.e., the meaning of a word. Humans are good at processing and understanding the idea that the words convey. Hence, we can share information about an image or an incident using a short string, assuming that we have some previous context. For example, a single word, “traffic,” conveys the information equivalent to a picture representing several vehicles stuck in a jam as shown in the figure below. However, computers are not good at understanding the ideas from the words, and we need to way to encode these ideas which computers can understand, i.e., in the form of numbers. These encoded representation are helpful for solving complex NLP tasks and are known as word embeddings (word vectors of a certain dimensions representing the idea of the word).
+<p>Humans use language as a way of communication for exchanging ideas and knowledge with others. Words are an integral part of the language that represents the <a href="https://en.wikipedia.org/wiki/Denotational_semantics">denotational semantics</a>, i.e., the meaning of a word. Humans are good at processing and understanding the idea that the words convey. Hence, we can share information about an image or an incident using a short string, assuming that we have some previous context. For example, a single word, “traffic,” conveys the information equivalent to a picture representing several vehicles stuck in a jam as shown in the figure below. However, computers are not good at understanding the ideas from the words, and we need to way to encode these ideas which computers can understand, i.e., in the form of numbers. These encoded representation are helpful for solving complex NLP tasks and are known as word embeddings (word vectors of a certain dimensions representing the idea of the word).
 This encoding is known as word embeddings (word vectors) which can help us use these representations for solving the complex NLP tasks.</p>
 
 </div>
@@ -335,8 +335,8 @@ $$<p>where $t$ is a chosen threshold, typically around $10^{-5}$.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="err">!</span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">s3</span><span class="o">.</span><span class="n">amazonaws</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">video</span><span class="o">.</span><span class="n">udacity</span><span class="o">-</span><span class="n">data</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">topher</span><span class="o">/</span><span class="mi">2018</span><span class="o">/</span><span class="n">October</span><span class="o">/</span><span class="mi">5</span><span class="n">bbe6499_text8</span><span class="o">/</span><span class="n">text8</span><span class="o">.</span><span class="n">zip</span>
-<span class="err">!</span><span class="n">unzip</span> <span class="n">text8</span><span class="o">.</span><span class="n">zip</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>wget https://s3.amazonaws.com/video.udacity-data.com/topher/2018/October/5bbe6499_text8/text8.zip
+<span class="o">!</span>unzip text8.zip
 </pre></div>
 
     </div>
@@ -353,8 +353,8 @@ $$<p>where $t$ is a chosen threshold, typically around $10^{-5}$.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
-<span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span> <span class="o">=</span> <span class="s2">"retina"</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = "retina"
 
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">random</span>
@@ -384,7 +384,7 @@ $$<p>where $t$ is a chosen threshold, typically around $10^{-5}$.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">"cuda"</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">"cpu"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">"cuda"</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">"cpu"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -401,7 +401,7 @@ $$<p>where $t$ is a chosen threshold, typically around $10^{-5}$.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">Word2VecDataset</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Word2VecDataset</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">corpus</span><span class="p">,</span> <span class="n">min_count</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">window_size</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">):</span>
         <span class="sd">""" Prepares the training data for the word2vec neural network.</span>
 <span class="sd">            Params:</span>
@@ -500,7 +500,7 @@ $$<p>where $t$ is a chosen threshold, typically around $10^{-5}$.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"text8"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"text8"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">corpus</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 
 <span class="n">dataset</span> <span class="o">=</span> <span class="n">Word2VecDataset</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span>
@@ -520,7 +520,7 @@ $$<p>where $t$ is a chosen threshold, typically around $10^{-5}$.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">SkipGramModel</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">SkipGramModel</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">):</span>
         <span class="sd">""" Skip Gram variant of Word2Vec with negative sampling for learning word </span>
 <span class="sd">            embeddings. Uses the concept of predicting context words given the </span>
@@ -590,7 +590,7 @@ $$<p>where $t$ is a chosen threshold, typically around $10^{-5}$.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">vocab_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">word2idx</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vocab_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">word2idx</span><span class="p">)</span>
 <span class="n">embed_dim</span> <span class="o">=</span> <span class="mi">300</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">SkipGramModel</span><span class="p">(</span><span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.003</span><span class="p">)</span>
@@ -610,7 +610,7 @@ $$<p>where $t$ is a chosen threshold, typically around $10^{-5}$.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">n_epochs</span> <span class="o">=</span> <span class="mi">5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_epochs</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">n_neg_samples</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">512</span>
 
@@ -664,7 +664,7 @@ $$<p>where $t$ is a chosen threshold, typically around $10^{-5}$.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">embeddings</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">embed_in</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s2">"cpu"</span><span class="p">)</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">embeddings</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">embed_in</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s2">"cpu"</span><span class="p">)</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
 
 <span class="c1"># number of words to be visualized</span>
 <span class="n">viz_words</span> <span class="o">=</span> <span class="mi">200</span>
@@ -833,8 +833,8 @@ $$<p>where $x_{max}$ is the cutoff of the weighting function and $\alpha$ is pow
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="err">!</span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">s3</span><span class="o">.</span><span class="n">amazonaws</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">video</span><span class="o">.</span><span class="n">udacity</span><span class="o">-</span><span class="n">data</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">topher</span><span class="o">/</span><span class="mi">2018</span><span class="o">/</span><span class="n">October</span><span class="o">/</span><span class="mi">5</span><span class="n">bbe6499_text8</span><span class="o">/</span><span class="n">text8</span><span class="o">.</span><span class="n">zip</span>
-<span class="err">!</span><span class="n">unzip</span> <span class="n">text8</span><span class="o">.</span><span class="n">zip</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>wget https://s3.amazonaws.com/video.udacity-data.com/topher/2018/October/5bbe6499_text8/text8.zip
+<span class="o">!</span>unzip text8.zip
 </pre></div>
 
     </div>
@@ -851,8 +851,8 @@ $$<p>where $x_{max}$ is the cutoff of the weighting function and $\alpha$ is pow
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
-<span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span> <span class="o">=</span> <span class="s2">"retina"</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = "retina"
 
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">random</span>
@@ -882,7 +882,7 @@ $$<p>where $x_{max}$ is the cutoff of the weighting function and $\alpha$ is pow
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">"cuda"</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">"cpu"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">"cuda"</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">"cpu"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -899,7 +899,7 @@ $$<p>where $x_{max}$ is the cutoff of the weighting function and $\alpha$ is pow
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">GloVeDataset</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">GloVeDataset</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">corpus</span><span class="p">,</span> <span class="n">min_count</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">window_size</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
         <span class="sd">""" Prepares the training data for the glove model.</span>
 <span class="sd">            Params:</span>
@@ -985,7 +985,7 @@ $$<p>where $x_{max}$ is the cutoff of the weighting function and $\alpha$ is pow
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"text8"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"text8"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">corpus</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 
 <span class="n">dataset</span> <span class="o">=</span> <span class="n">GloVeDataset</span><span class="p">(</span><span class="n">corpus</span><span class="p">)</span>
@@ -1005,7 +1005,7 @@ $$<p>where $x_{max}$ is the cutoff of the weighting function and $\alpha$ is pow
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="k">class</span> <span class="nc">GloVeModel</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">GloVeModel</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">,</span> <span class="n">x_max</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">):</span>
         <span class="sd">""" GloVe model for learning word embeddings. Uses the approach of predicting </span>
 <span class="sd">            context words given the center word.</span>
@@ -1077,7 +1077,7 @@ $$<p>where $x_{max}$ is the cutoff of the weighting function and $\alpha$ is pow
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">vocab_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">word2idx</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vocab_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">word2idx</span><span class="p">)</span>
 <span class="n">embed_dim</span> <span class="o">=</span> <span class="mi">300</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">GloVeModel</span><span class="p">(</span><span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adagrad</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
@@ -1097,7 +1097,7 @@ $$<p>where $x_{max}$ is the cutoff of the weighting function and $\alpha$ is pow
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">n_epochs</span> <span class="o">=</span> <span class="mi">5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_epochs</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">512</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"-"</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
@@ -1147,7 +1147,7 @@ $$<p>where $x_{max}$ is the cutoff of the weighting function and $\alpha$ is pow
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">emb_in</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">embed_in</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s2">"cpu"</span><span class="p">)</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">emb_in</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">embed_in</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s2">"cpu"</span><span class="p">)</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
 <span class="n">emb_out</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">embed_out</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s2">"cpu"</span><span class="p">)</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
 <span class="n">embeddings</span> <span class="o">=</span> <span class="n">emb_in</span> <span class="o">+</span> <span class="n">emb_out</span>
 
