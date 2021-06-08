@@ -1,6 +1,6 @@
 /*-----------------------------------*/
 /*--- IMPORT STYLES FOR FASTPAGES ---*/
-@import "minima/fastpages-styles";   
+@import "minima/fastpages-styles";
 
 
 
@@ -9,6 +9,23 @@
 
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 // @import "minima/fastpages-dracula-highlight"; 
+
+// change the default font
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+    font-family: font-family: "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: "Inter var", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+    }
+}
+
+.page-content {
+    font-family: "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
 
 // make body text (paragraphy) smaller (was 20px)
 .post-content p, .post-content li {
