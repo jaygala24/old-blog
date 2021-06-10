@@ -11,10 +11,46 @@
 // @import "minima/fastpages-dracula-highlight"; 
 
 
-// make body text (paragraphy) smaller (was 20px)
+// change the default font
+@import url('https://rsms.me/inter/inter.css');
+html { 
+    font-family: "Inter", sans-serif !important; 
+}
+@supports (font-variation-settings: normal) {
+    html { 
+        font-family: "Inter var", sans-serif !important; 
+    }
+}
+
+body {
+    font-family: "Inter", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important;
+}
+
+.page-content {
+    font-family: "Inter", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important;
+}
+
+
+// profile image
+.profile-img {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50%;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.175);
+}
+
+
+// make body text (paragraph) smaller (was 20px)
 .post-content p, .post-content li {
    font-size: 16px;
 }
+
+
+// make code highlighted text larger
+.highlight pre {
+    font-size: 14px;
+}
+
 
 // change Post-Title (post-header) size
 // Defaults from minima/_sass/minima/_layout.scss were relative-font-size(2.625) and relative-font-size(2.625)
@@ -26,9 +62,6 @@
   }
 }
 
-.post-header p {
-  font-style: italic
-}
 
 // make heading sizes smaller in body
 .post-content {

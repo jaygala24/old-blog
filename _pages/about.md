@@ -4,6 +4,12 @@ title: About Me
 permalink: /about/
 ---
 
+<center>
+    <figure>
+        <img src="{{site.baseurl}}/images/profile.png" class="profile-img"/>
+    </figure>
+</center>
+
 Hi! I'm Jay 👋, a CS undergrad from Mumbai University. I started my programming career with C language in 2017. I have fluency in programming languages like C, Python and JavaScript. I have been working on solving problems using ML for over a year now.
 
 Current areas of interests:
