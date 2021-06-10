@@ -434,9 +434,7 @@ body { font-family: "Inter", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", s
 
 .page-content { font-family: "Inter", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important; }
 
-.profile-img { width: 250px; height: 250px; border-radius: 50%; box-shadow: 0 8px 12px rgba(0, 0, 0, 0.175); }
-
-@media only screen and (max-width: 800px) { .profile-img { /* for mobile phone and tablet devices */ width: 150px; height: 150px; } }
+.profile-img { width: 150px !important; height: 150px !important; border-radius: 50%; box-shadow: 0 8px 12px rgba(0, 0, 0, 0.175); }
 
 .post-content p, .post-content li { font-size: 16px; }
 
