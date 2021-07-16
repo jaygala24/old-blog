@@ -1,67 +1,66 @@
 /*-----------------------------------*/
 /*--- IMPORT STYLES FOR FASTPAGES ---*/
-@import "minima/fastpages-styles";
-
-
+@import 'minima/fastpages-styles';
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
-// @import "minima/fastpages-dracula-highlight"; 
-
+// @import "minima/fastpages-dracula-highlight";
 
 // change the default font
 @import url('https://rsms.me/inter/inter.css');
-html { 
-    font-family: "Inter", sans-serif !important; 
+html {
+  font-family: 'Inter', sans-serif !important;
 }
 @supports (font-variation-settings: normal) {
-    html { 
-        font-family: "Inter var", sans-serif !important; 
-    }
+  html {
+    font-family: 'Inter var', sans-serif !important;
+  }
 }
 
 body {
-    font-family: "Inter", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important;
+  font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'Arial', sans-serif !important;
 }
 
 .page-content {
-    font-family: "Inter", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important;
+  font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'Arial', sans-serif !important;
 }
-
 
 // profile image
 .profile-img {
-    width: 150px !important;
-    height: 150px !important;
-    border-radius: 50%;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.175);
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.175);
 }
-
 
 // make body text (paragraph) smaller (was 20px)
-.post-content p, .post-content li {
-   font-size: 16px;
+.post-content p,
+.post-content li {
+  font-size: 16px;
 }
-
 
 // make code highlighted text larger
 .highlight pre {
-    font-size: 14px;
+  font-size: 14px;
 }
 
+// make output highlighted text larger
+.output pre {
+  font-size: 14px;
+  background-color: #ffe1e31f;
+}
 
 // change Post-Title (post-header) size
 // Defaults from minima/_sass/minima/_layout.scss were relative-font-size(2.625) and relative-font-size(2.625)
 .post-header h1 {
-  @include relative-font-size(2.0);  // 2.0
+  @include relative-font-size(2); // 2.0
 
   @media screen and (min-width: $on-large) {
-    @include relative-font-size(2.25);  // 2.25
+    @include relative-font-size(2.25); // 2.25
   }
 }
-
 
 // make heading sizes smaller in body
 .post-content {
