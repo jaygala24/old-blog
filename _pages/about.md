@@ -12,7 +12,7 @@ permalink: /about/
 
 Hi! I'm Jay 👋, a CS undergrad from Mumbai University who recently graduated in May 2021. I started my programming career with C language in 2017. I have fluency in programming languages like C, Python, and JavaScript. I have been working on solving problems using ML for over a year now.
 
-I'm currently working as a research intern at the [University of California San Diego](https://ucsd.edu/) under [Dr. Pengtao Xie](https://sites.google.com/site/pengtaoxie2008) on applying humans' learning skills for Neural Architecture Search. I'm also a Teaching Assistant at the [Unicode Machine Learning Summer Course 2021](https://djunicode.github.io/umlsc-2021/) supported by Google AI Research India.
+I'm currently working as a research intern at the [University of California San Diego](https://ucsd.edu/) under [Dr. Pengtao Xie](https://sites.google.com/site/pengtaoxie2008) on applying humans' learning skills for Neural Architecture Search, specifically learning from mistakes. I was also a Teaching Assistant for the [Unicode Machine Learning Summer Course 2021](https://djunicode.github.io/umlsc-2021/) supported by Google AI Research India. I'm also collaborating with [Zeerak Waseem](https://scholar.google.com/citations?hl=en&user=3M3WdvkAAAAJ&view_op=list_works&sortby=pubdate) on Hate Speech Detection using Federated Learning.
 
 Current areas of interest:
 - Multimodal machine learning (Language and Vision Intersection)
@@ -32,10 +32,14 @@ I have previously worked as an ML project intern at Tata Consultancy Services, w
 
 I was a mentor at [DJ Unicode](https://github.com/djunicode), an open-source organization by our college department, where I help juniors on software development projects as well as learn new stuff too 😀.
 
-I have also presented paper reviews as a part of Unicode Research Group on the topics of Variational Inference and Probabilistic Programming (_I have made some mistakes during initial presentations but learnt a lot from my peers through discussions_).
+I have also presented paper reviews as a part of Unicode Research Group on the topics of Variational Inference and Probabilistic Programming (_I have made some mistakes during initial presentations but have constantly tried to improve and learn through discussions with peers_).
 - Auto-encoding Variational Bayes ([Slides](https://docs.google.com/presentation/d/1l8Q9y9KOKjvu2jbKkaA2KOHMFGILWoN2pP5yTihwq18/edit?usp=sharing), [Video](https://www.youtube.com/watch?v=bSQ129B_2jM&list=PLob0yCmJjJ3U6vUrmExdTpMoRh43c1nXK&index=6), [Paper](https://arxiv.org/pdf/1312.6114.pdf))
 - Deep Probabilistic Programming ([Slides](https://docs.google.com/presentation/d/1aswNGbhqRQaH0K7Cd5Cd-41nS36O1XLOlC-qIJElff8/edit?usp=sharing), [Video](https://www.youtube.com/watch?v=nT8ISRrUixQ&list=PLob0yCmJjJ3U6vUrmExdTpMoRh43c1nXK&index=7), [Paper](https://arxiv.org/pdf/1701.03757.pdf))
 
-> <em>Note: This is just an overview of some of the projects I've worked. Please check my [GitHub profile](https://github.com/jaygala24) and [CV](https://jaygala24.github.io/blog/cv/) for more details.</em>
+<p style="background: #dbedff; padding: 16px !important; border-radius: 8px; border-color: rgba(4,66,137,0.2); color: #24292e;">
+    <em>
+        Note: This is just an overview of some of the projects I’ve worked. Please check my <a href="https://github.com/jaygala24">GitHub profile</a> and <a href="https://jaygala24.github.io/blog/cv/">CV</a> for more details.
+    </em>
+</p>
 
 You can reach out to me using [Email](mailto:jaygala24@gmail.com), [Twitter](https://twitter.com/jaygala24/) or [Linkedin](https://www.linkedin.com/in/jaygala24).
