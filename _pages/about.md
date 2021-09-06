@@ -14,7 +14,7 @@ Hi! I'm Jay 👋, a CS undergrad from Mumbai University who recently graduated i
 
 I'm currently working as a research intern at the [University of California San Diego](https://ucsd.edu/) under [Dr. Pengtao Xie](https://sites.google.com/site/pengtaoxie2008) on applying humans' learning skills for Neural Architecture Search, specifically learning from mistakes. I'm also collaborating with [Zeerak Waseem](https://scholar.google.com/citations?hl=en&user=3M3WdvkAAAAJ&view_op=list_works&sortby=pubdate) on Hate Speech Detection using Federated Learning.
 
-I was a Teaching Assistant for the [Unicode Machine Learning Summer Course 2021](https://djunicode.github.io/umlsc-2021/) supported by Google AI Research India. I also conducted a Research Seminar as a part of the Unicode Research Group with the other TAs. [Slides](https://drive.google.com/file/d/1BNai1MVN7mx0wuAFgYVKfh48YF-D3PDS/view) and [recording](https://drive.google.com/file/d/1DEDxLmlsJvCtRh5upyT7fvFI4XQA2fi3/view) for the above seminar are available publicly.
+I was a Teaching Assistant for the [Unicode Machine Learning Summer Course 2021](https://djunicode.github.io/umlsc-2021/) supported by Google AI Research India. I also conducted a Research Seminar as a part of the Unicode Research Group with the other TAs. [Slides](https://drive.google.com/file/d/1BNai1MVN7mx0wuAFgYVKfh48YF-D3PDS/view) and [recording](https://youtu.be/_0VpUNATCdY) for the above seminar are available publicly.
 
 Current areas of interest:
 - Multimodal machine learning (Language and Vision Intersection)
