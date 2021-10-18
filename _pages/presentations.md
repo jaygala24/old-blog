@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Presentations & Talks
-permalink: /talks/
+permalink: /presentations/
 ---
 
-This page lists the talks and paper reviews presented by me to audiences. Please note that the video recordings are not available for all the listed talks & presentations.
+This page lists a set of talks, seminars, and paper reviews presented by me to audiences (in reverse chronological order).
 
 ## MLC Collective
 
