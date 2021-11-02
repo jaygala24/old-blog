@@ -436,7 +436,7 @@ body { font-family: 'Karla', 'Helvetica Neue', 'Helvetica', 'Tahoma', 'Arial', s
 
 .profile-img { width: 150px !important; height: 150px !important; border-radius: 50%; box-shadow: 0 8px 12px rgba(0, 0, 0, 0.175); }
 
-.post-content p, .post-content li { font-size: 16px; }
+.post-content p, .post-content li { font-size: 16px; text-align: justify; }
 
 .highlight pre { font-size: 14px; }
 
