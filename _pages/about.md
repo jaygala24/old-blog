@@ -12,7 +12,7 @@ permalink: /about/
 
 Hi! I'm Jay 👋, a CS undergrad from Mumbai University who recently graduated in May 2021. I started my programming career with C language in 2017. I have fluency in programming languages like C, Python, and JavaScript. I have been working on solving problems using ML for over a year now.
 
-I'm currently working as a research intern on applying human learning strategies, specifically learning from mistakes for Neural Architecture Search at the [University of California San Diego](https://ucsd.edu/) under [Prof. Pengtao Xie](https://sites.google.com/site/pengtaoxie2008). I'm also collaborating with [Zeerak Talat](https://scholar.google.com/citations?hl=en&user=3M3WdvkAAAAJ&view_op=list_works&sortby=pubdate) on Hate Speech Detection using Federated Learning.
+I'm currently working as a research intern on applying human learning strategies, specifically learning from mistakes for Neural Architecture Search with [Prof. Pengtao Xie](https://sites.google.com/site/pengtaoxie2008) at the [University of California San Diego](https://ucsd.edu/). I'm also collaborating with [Zeerak Talat](https://scholar.google.com/citations?hl=en&user=3M3WdvkAAAAJ&view_op=list_works&sortby=pubdate) on Hate Speech Detection using Federated Learning.
 
 I was a Teaching Assistant for the [Unicode Machine Learning Summer Course 2021](https://djunicode.github.io/umlsc-2021/) supported by Google Research India.
 
@@ -23,9 +23,9 @@ Current areas of interest:
 - Interpretability
 
 Independent research projects:
-- Worked on the task of visual dialog to reduce the bias towards dialog history using mixed attention mechanisms as a part of final year project (Accepted at [ICACDS 2021](https://icacds.com/)).
-- Co-authored a paper on using object detection and image processing techniques to estimate the dimension of potholes (Published at [IVCNZ 2020](https://ecs.wgtn.ac.nz/Events/IVCNZ2020/)).
-- Co-authored a chapter titled "Combatting COVID-19 using Object Detection Techniques" for Elsevier's CPS-AI & COVID-19 book (Accepted).
+- Worked on the task of visual dialog to reduce the bias towards dialog history using mixed attention mechanisms as a part of final year project.
+- Co-authored a paper on using object detection and image processing techniques to estimate the dimension of potholes.
+- Co-authored a chapter titled "Combatting COVID-19 using Object Detection Techniques" for Elsevier's CPS-AI & COVID-19 book.
 - Co-authored papers on using IoT and ML effectively to automate tasks in the agriculture and waste management sectors.
 
 You can find more about the publications on [Scholar](https://scholar.google.com/citations?user=lNn2qGoAAAAJ&hl=en).
