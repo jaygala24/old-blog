@@ -12,7 +12,7 @@ permalink: /about/
 
 Hi! I'm Jay 👋, a CS undergrad from Mumbai University who recently graduated in May 2021. I started my programming career with C language in 2017. I have fluency in programming languages like C, Python, and JavaScript. I have been working on solving problems using ML for over a year now.
 
-I'm currently working as a research intern on applying human learning strategies, specifically learning from mistakes for Neural Architecture Search with [Prof. Pengtao Xie](https://sites.google.com/site/pengtaoxie2008) at the [University of California San Diego](https://ucsd.edu/). I'm also collaborating with [Zeerak Talat](https://scholar.google.com/citations?hl=en&user=3M3WdvkAAAAJ&view_op=list_works&sortby=pubdate) on Hate Speech Detection using Federated Learning.
+I'm currently working as a research intern on applying human learning strategies, specifically learning from mistakes for Neural Architecture Search with [Prof. Pengtao Xie](https://sites.google.com/site/pengtaoxie2008) from the [University of California San Diego](https://ucsd.edu/). I'm also collaborating with [Zeerak Talat](https://scholar.google.com/citations?hl=en&user=3M3WdvkAAAAJ&view_op=list_works&sortby=pubdate) on Hate Speech Detection using Federated Learning.
 
 I was a Teaching Assistant for the [Unicode Machine Learning Summer Course 2021](https://djunicode.github.io/umlsc-2021/) supported by Google Research India.
 
