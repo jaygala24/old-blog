@@ -6,6 +6,10 @@ permalink: /presentations/
 
 This page lists a set of talks, seminars, and paper reviews presented by me to audiences (in reverse chronological order).
 
+## PXie Lab
+
+1. Learning from Mistakes based on Class Weighting with Application to Neural Architecture Search ([Slides](https://drive.google.com/file/d/1lasWeXPb6ABTzjo3a52_jHNI1crDeUK3/view?usp=sharing), [Paper](https://arxiv.org/abs/2112.00275))
+
 ## ML Collective
 
 1. Facts as Experts: Adaptable and Interpretable Neural Memory over Symbolic Knowledge ([Slides](https://drive.google.com/file/d/1OKqP6_icQLwxY70u48M4U2Kf-J2r1aPp/view?usp=sharing), [Paper](https://arxiv.org/pdf/2007.00849.pdf))
