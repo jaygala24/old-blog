@@ -12,14 +12,14 @@ permalink: /about/
 
 Hi! I'm Jay 👋, a CS undergrad from Mumbai University who recently graduated in May 2021. I started my programming career with C language in 2017. I have fluency in programming languages like C, Python, and JavaScript. I have been working on solving problems using ML for over a year now.
 
-I'm currently working on developing robust VQA system using adversarial data generation with [Prof. Pengtao Xie](https://sites.google.com/site/pengtaoxie2008) from the [University of California San Diego](https://ucsd.edu/). You can find the [preprint](https://arxiv.org/abs/2112.00275) of my recent work on applying human strategy of learning from mistakes for differentiable architecture search approaches. I'm also collaborating with [Dr. Zeerak Talat](https://scholar.google.com/citations?hl=en&user=3M3WdvkAAAAJ&view_op=list_works&sortby=pubdate) on Hate Speech Detection using Federated Learning.
+I'm currently working on developing robust VQA system using neural architecture search and adversarial data generation with [Prof. Pengtao Xie](https://sites.google.com/site/pengtaoxie2008) from the [University of California San Diego](https://ucsd.edu/). You can find the [preprint](https://arxiv.org/abs/2112.00275) of my recent work on applying human strategy of learning from mistakes for differentiable architecture search approaches. I'm also collaborating with [Dr. Zeerak Talat](https://scholar.google.com/citations?hl=en&user=3M3WdvkAAAAJ&view_op=list_works&sortby=pubdate) on Hate Speech Detection using Federated Learning.
 
 I was a Teaching Assistant for the [Unicode Machine Learning Summer Course 2021](https://djunicode.github.io/umlsc-2021/) supported by Google Research India.
 
 Current areas of interest:
-- Multimodal machine learning (Language and Vision Intersection)
+- Multimodal Machine Learning (Language and Vision Intersection)
 - Commonsense Reasoning
-- Out-of-distribution generalization
+- Out-of-distribution Generalization
 - Interpretability
 
 Independent research projects:
