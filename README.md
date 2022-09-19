@@ -1,3 +1,5 @@
+# this blog website is deprecated and no longer in use!
+
 [//]: # (This template replaces README.md when someone creates a new repo with the fastpages template.)
 
 ![](https://github.com/jaygala24/blog/workflows/CI/badge.svg) 
